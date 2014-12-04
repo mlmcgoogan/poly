@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3213F6AC1A2CDAC100993698 /* PolyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3213F6AA1A2CDAC100993698 /* PolyViewController.mm */; };
+		3213F6B21A2CE9E000993698 /* PolyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3213F6B11A2CE9E000993698 /* PolyViewController.xib */; };
+		3213F6BB1A2E905100993698 /* MidiWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3213F6B91A2E905100993698 /* MidiWave.cpp */; };
+		325FEFFB1A2BF52900CE1EDD /* audioeffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 325FEFCF1A2BF52900CE1EDD /* audioeffect.cpp */; };
+		325FEFFC1A2BF52900CE1EDD /* audioeffectx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 325FEFD11A2BF52900CE1EDD /* audioeffectx.cpp */; };
+		325FEFFD1A2BF52900CE1EDD /* vstplugmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 325FEFD31A2BF52900CE1EDD /* vstplugmain.cpp */; };
+		325FF0131A2BF5C900CE1EDD /* PolySynth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 325FF0111A2BF5C900CE1EDD /* PolySynth.cpp */; };
+		325FF11D1A2BFD8F00CE1EDD /* Wave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 325FF11B1A2BFD8F00CE1EDD /* Wave.cpp */; };
+		325FF1201A2C077300CE1EDD /* ADSREnvelope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 325FF11E1A2C077300CE1EDD /* ADSREnvelope.cpp */; };
+		325FF1231A2C13A300CE1EDD /* PolyEditor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 325FF1211A2C13A300CE1EDD /* PolyEditor.mm */; };
+		325FF1251A2C16F000CE1EDD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325FF1241A2C16F000CE1EDD /* Cocoa.framework */; };
+		325FF1271A2C18D300CE1EDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325FF1261A2C18D300CE1EDD /* Foundation.framework */; };
+		325FF1291A2C21AA00CE1EDD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325FF1281A2C21AA00CE1EDD /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3213F6AA1A2CDAC100993698 /* PolyViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PolyViewController.mm; sourceTree = "<group>"; };
+		3213F6AB1A2CDAC100993698 /* PolyViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = PolyViewController.h; sourceTree = "<group>"; };
+		3213F6B11A2CE9E000993698 /* PolyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PolyViewController.xib; sourceTree = "<group>"; };
+		3213F6B91A2E905100993698 /* MidiWave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidiWave.cpp; sourceTree = "<group>"; };
+		3213F6BA1A2E905100993698 /* MidiWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiWave.h; sourceTree = "<group>"; };
+		325FEF6A1A2BF51800CE1EDD /* poly.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = poly.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		325FEF6E1A2BF51800CE1EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		325FEF771A2BF52900CE1EDD /* aeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffect.h; sourceTree = "<group>"; };
+		325FEF781A2BF52900CE1EDD /* aeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffectx.h; sourceTree = "<group>"; };
+		325FEF791A2BF52900CE1EDD /* vstfxstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vstfxstore.h; sourceTree = "<group>"; };
+		325FEFCE1A2BF52900CE1EDD /* aeffeditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffeditor.h; sourceTree = "<group>"; };
+		325FEFCF1A2BF52900CE1EDD /* audioeffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audioeffect.cpp; sourceTree = "<group>"; };
+		325FEFD01A2BF52900CE1EDD /* audioeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioeffect.h; sourceTree = "<group>"; };
+		325FEFD11A2BF52900CE1EDD /* audioeffectx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audioeffectx.cpp; sourceTree = "<group>"; };
+		325FEFD21A2BF52900CE1EDD /* audioeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioeffectx.h; sourceTree = "<group>"; };
+		325FEFD31A2BF52900CE1EDD /* vstplugmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vstplugmain.cpp; sourceTree = "<group>"; };
+		325FF00F1A2BF59000CE1EDD /* PkgInfo */ = {isa = PBXFileReference; lastKnownFileType = text; path = PkgInfo; sourceTree = SOURCE_ROOT; };
+		325FF0111A2BF5C900CE1EDD /* PolySynth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PolySynth.cpp; sourceTree = "<group>"; };
+		325FF0121A2BF5C900CE1EDD /* PolySynth.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = PolySynth.h; sourceTree = "<group>"; };
+		325FF11B1A2BFD8F00CE1EDD /* Wave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wave.cpp; sourceTree = "<group>"; };
+		325FF11C1A2BFD8F00CE1EDD /* Wave.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Wave.h; sourceTree = "<group>"; };
+		325FF11E1A2C077300CE1EDD /* ADSREnvelope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ADSREnvelope.cpp; sourceTree = "<group>"; };
+		325FF11F1A2C077300CE1EDD /* ADSREnvelope.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = ADSREnvelope.h; sourceTree = "<group>"; };
+		325FF1211A2C13A300CE1EDD /* PolyEditor.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = PolyEditor.mm; sourceTree = "<group>"; };
+		325FF1221A2C13A300CE1EDD /* PolyEditor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = PolyEditor.h; sourceTree = "<group>"; };
+		325FF1241A2C16F000CE1EDD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		325FF1261A2C18D300CE1EDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		325FF1281A2C21AA00CE1EDD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		325FEF671A2BF51800CE1EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325FF1291A2C21AA00CE1EDD /* Carbon.framework in Frameworks */,
+				325FF1271A2C18D300CE1EDD /* Foundation.framework in Frameworks */,
+				325FF1251A2C16F000CE1EDD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3213F6A91A2CDAA400993698 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				3213F6AA1A2CDAC100993698 /* PolyViewController.mm */,
+				3213F6AB1A2CDAC100993698 /* PolyViewController.h */,
+				3213F6B11A2CE9E000993698 /* PolyViewController.xib */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		325FEF611A2BF51800CE1EDD = {
+			isa = PBXGroup;
+			children = (
+				325FF1281A2C21AA00CE1EDD /* Carbon.framework */,
+				325FF1261A2C18D300CE1EDD /* Foundation.framework */,
+				325FF1241A2C16F000CE1EDD /* Cocoa.framework */,
+				325FEF741A2BF51E00CE1EDD /* VSTSDK */,
+				325FEF6C1A2BF51800CE1EDD /* poly */,
+				325FEF6B1A2BF51800CE1EDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		325FEF6B1A2BF51800CE1EDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				325FEF6A1A2BF51800CE1EDD /* poly.component */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		325FEF6C1A2BF51800CE1EDD /* poly */ = {
+			isa = PBXGroup;
+			children = (
+				325FF0101A2BF5B500CE1EDD /* Source */,
+				325FEF6D1A2BF51800CE1EDD /* Supporting Files */,
+			);
+			path = poly;
+			sourceTree = "<group>";
+		};
+		325FEF6D1A2BF51800CE1EDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				325FEF6E1A2BF51800CE1EDD /* Info.plist */,
+				325FF00F1A2BF59000CE1EDD /* PkgInfo */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		325FEF741A2BF51E00CE1EDD /* VSTSDK */ = {
+			isa = PBXGroup;
+			children = (
+				325FEF751A2BF52900CE1EDD /* pluginterfaces */,
+				325FEF7A1A2BF52900CE1EDD /* public.sdk */,
+			);
+			name = VSTSDK;
+			sourceTree = "<group>";
+		};
+		325FEF751A2BF52900CE1EDD /* pluginterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				325FEF761A2BF52900CE1EDD /* vst2.x */,
+			);
+			name = pluginterfaces;
+			path = ../../vstsdk2.4/pluginterfaces;
+			sourceTree = "<group>";
+		};
+		325FEF761A2BF52900CE1EDD /* vst2.x */ = {
+			isa = PBXGroup;
+			children = (
+				325FEF771A2BF52900CE1EDD /* aeffect.h */,
+				325FEF781A2BF52900CE1EDD /* aeffectx.h */,
+				325FEF791A2BF52900CE1EDD /* vstfxstore.h */,
+			);
+			path = vst2.x;
+			sourceTree = "<group>";
+		};
+		325FEF7A1A2BF52900CE1EDD /* public.sdk */ = {
+			isa = PBXGroup;
+			children = (
+				325FEFCC1A2BF52900CE1EDD /* source */,
+			);
+			name = public.sdk;
+			path = ../../vstsdk2.4/public.sdk;
+			sourceTree = "<group>";
+		};
+		325FEFCC1A2BF52900CE1EDD /* source */ = {
+			isa = PBXGroup;
+			children = (
+				325FEFCD1A2BF52900CE1EDD /* vst2.x */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		325FEFCD1A2BF52900CE1EDD /* vst2.x */ = {
+			isa = PBXGroup;
+			children = (
+				325FEFCE1A2BF52900CE1EDD /* aeffeditor.h */,
+				325FEFCF1A2BF52900CE1EDD /* audioeffect.cpp */,
+				325FEFD01A2BF52900CE1EDD /* audioeffect.h */,
+				325FEFD11A2BF52900CE1EDD /* audioeffectx.cpp */,
+				325FEFD21A2BF52900CE1EDD /* audioeffectx.h */,
+				325FEFD31A2BF52900CE1EDD /* vstplugmain.cpp */,
+			);
+			path = vst2.x;
+			sourceTree = "<group>";
+		};
+		325FF0101A2BF5B500CE1EDD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3213F6A91A2CDAA400993698 /* mac */,
+				325FF0111A2BF5C900CE1EDD /* PolySynth.cpp */,
+				325FF0121A2BF5C900CE1EDD /* PolySynth.h */,
+				325FF11B1A2BFD8F00CE1EDD /* Wave.cpp */,
+				325FF11C1A2BFD8F00CE1EDD /* Wave.h */,
+				325FF11E1A2C077300CE1EDD /* ADSREnvelope.cpp */,
+				325FF11F1A2C077300CE1EDD /* ADSREnvelope.h */,
+				325FF1211A2C13A300CE1EDD /* PolyEditor.mm */,
+				325FF1221A2C13A300CE1EDD /* PolyEditor.h */,
+				3213F6B91A2E905100993698 /* MidiWave.cpp */,
+				3213F6BA1A2E905100993698 /* MidiWave.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		325FEF691A2BF51800CE1EDD /* poly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 325FEF711A2BF51800CE1EDD /* Build configuration list for PBXNativeTarget "poly" */;
+			buildPhases = (
+				325FEF661A2BF51800CE1EDD /* Sources */,
+				325FEF671A2BF51800CE1EDD /* Frameworks */,
+				325FEF681A2BF51800CE1EDD /* Resources */,
+				325FF00E1A2BF54A00CE1EDD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = poly;
+			productName = poly;
+			productReference = 325FEF6A1A2BF51800CE1EDD /* poly.component */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		325FEF621A2BF51800CE1EDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Manic.io;
+				TargetAttributes = {
+					325FEF691A2BF51800CE1EDD = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 325FEF651A2BF51800CE1EDD /* Build configuration list for PBXProject "poly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 325FEF611A2BF51800CE1EDD;
+			productRefGroup = 325FEF6B1A2BF51800CE1EDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				325FEF691A2BF51800CE1EDD /* poly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		325FEF681A2BF51800CE1EDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3213F6B21A2CE9E000993698 /* PolyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		325FF00E1A2BF54A00CE1EDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "VSTSRC=${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.${WRAPPER_EXTENSION}\nVSTDEST=/Users/mlmcgoogan/Documents/vst/VSTProjects/Builds/${PRODUCT_NAME}_${CONFIGURATION}.vst\n\ncp \"${SRCROOT}/PkgInfo\" \"$VSTSRC/Contents\"\n\nif [ -d \"$VSTDEST\" ]; then\nrm -rf \"$VSTDEST\"\nfi\n\ncp -r \"$VSTSRC\" \"$VSTDEST\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		325FEF661A2BF51800CE1EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325FF0131A2BF5C900CE1EDD /* PolySynth.cpp in Sources */,
+				325FF1231A2C13A300CE1EDD /* PolyEditor.mm in Sources */,
+				325FEFFC1A2BF52900CE1EDD /* audioeffectx.cpp in Sources */,
+				3213F6BB1A2E905100993698 /* MidiWave.cpp in Sources */,
+				325FEFFB1A2BF52900CE1EDD /* audioeffect.cpp in Sources */,
+				325FF1201A2C077300CE1EDD /* ADSREnvelope.cpp in Sources */,
+				325FEFFD1A2BF52900CE1EDD /* vstplugmain.cpp in Sources */,
+				3213F6AC1A2CDAC100993698 /* PolyViewController.mm in Sources */,
+				325FF11D1A2BFD8F00CE1EDD /* Wave.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		325FEF6F1A2BF51800CE1EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		325FEF701A2BF51800CE1EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		325FEF721A2BF51800CE1EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/mlmcgoogan/Documents/vst/vstsdk2.4,
+				);
+				INFOPLIST_FILE = poly/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+		325FEF731A2BF51800CE1EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/mlmcgoogan/Documents/vst/vstsdk2.4,
+				);
+				INFOPLIST_FILE = poly/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		325FEF651A2BF51800CE1EDD /* Build configuration list for PBXProject "poly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				325FEF6F1A2BF51800CE1EDD /* Debug */,
+				325FEF701A2BF51800CE1EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		325FEF711A2BF51800CE1EDD /* Build configuration list for PBXNativeTarget "poly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				325FEF721A2BF51800CE1EDD /* Debug */,
+				325FEF731A2BF51800CE1EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 325FEF621A2BF51800CE1EDD /* Project object */;
+}
